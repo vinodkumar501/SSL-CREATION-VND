@@ -1,0 +1,20 @@
+https://inuits.eu/blog/prometheus-server-tls/
+https://www.ibm.com/docs/en/api-connect/2018.x?topic=overview-generating-self-signed-certificate-using-openssl
+https://www.entrust.com/blog/2019/03/ssl-certificates-101-why-do-i-need-an-ssl-tls-certificate/
+https://www.linode.com/docs/guides/create-a-self-signed-tls-certificate/
+https://www.youtube.com/watch?v=8wCzSNZg5e8
+https://digitalkhammam.com/what-is-work-from-home-legal-ways-for-online-money-making/
+
+
+root@nginx-proxy:~/prom# 
+
+openssl req -new -newkey rsa:2048 -days 365 -nodes -x509 -keyout prometheus.key -out prometheus.crt -subj "/C=BE/ST=Antwerp/L=Brasschaat/O=Inuits/CN=localhost" -addext "subjectAltName = DNS:localhost"
+
+
+Generating a RSA private key
+......................................................+++++
+.......+++++
+writing new private key to 'prometheus.key'
+-----
+root@nginx-proxy:~/prom# ls
+prometheus.crt  prometheus.key
