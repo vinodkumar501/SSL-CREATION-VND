@@ -11,7 +11,6 @@ Port 443 for https needs to be open and available at time of executing certbot.
 Certbot needs root access while executing because only root is allowed to bind to any port below 1024.
 We will be using our own domain myminio.com as an example in this recipe. Replace with your own domain under your setup.
 
-
 Step 1: Install Certbot
 Install Certbot by following the documentation at https://certbot.eff.org/
 
